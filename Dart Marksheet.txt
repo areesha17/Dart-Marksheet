@@ -1,0 +1,33 @@
+void main() {
+  var a_score = 90;
+  var b_score = 80;
+  var c_score = 70;
+  var d_score = 60;
+  var e_score = 50;
+
+  int english = 75;
+  int chemistry = 65;
+  int physics = 83;
+  int maths = 95;
+  int histroy = 40;
+
+  int sum = english + chemistry + physics + maths + histroy;
+  print("sum = ${sum}");
+  int total = 500;
+  double percentage = ((sum * 100) / total);
+  print("Percentage = ${percentage}");
+
+  if (percentage >= a_score) {
+    print("Your Grade is A+");
+  } else if (percentage >= b_score) {
+    print("Your Grade is A");
+  } else if (percentage >= c_score) {
+    print("Your Grade is B");
+  } else if (percentage >= d_score) {
+    print("Your Grade is C");
+  } else if (percentage >= e_score) {
+    print("Your Grade is E");
+  } else {
+    print("Fail");
+  }
+}
